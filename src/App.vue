@@ -2,6 +2,9 @@
 import MainBody from "./components/layout/MainBody.vue";
 import FootBar from "./components/layout/FootBar.vue";
 import NavigationDrawer from "./components/layout/NavigationDrawer.vue";
+import cfg from "./configs/index.js";
+
+document.title = cfg().info.title
 </script>
 
 <template>
