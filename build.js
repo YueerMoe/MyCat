@@ -3,6 +3,10 @@ import path from 'path';
 import jsYaml from "js-yaml";
 const directoryPath = './articles';
 import {marked} from "marked";
+
+
+fs.mkdirSync('./public/articles/');
+fs.mkdirSync('./public/articles/post/');
 function generateRandomString(length) {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let randomString = '';
