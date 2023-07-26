@@ -75,7 +75,7 @@ const c = ref(cfg().footer)
     <div class="copy">
       Copyright &copy; 2023-{{ new Date().getFullYear() }}  <strong><a :href="c.copy.href">{{ c.copy.name }}</a></strong>
       <span>
-        |Powered By <strong><a href="" target="_blank">OneCat</a></strong>
+        |Powered By <strong><a href="https://github.com/BoxCatTeam/OneCat/" target="_blank">OneCat</a></strong>
       </span>
     </div>
   </v-footer>
