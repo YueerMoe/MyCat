@@ -24,9 +24,6 @@ dist-ssr
 *.sw?
 
 
-/articles
 !articles/test.md
 *.cat
 index.json
-src/configs/index.js
-src/configs/links.json

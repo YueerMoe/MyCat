@@ -2,22 +2,26 @@ import load from '../assets/loading.webp'
 const cfg = (()=>({
     lazy: load,
     info:{
-        name: '',
-        avatar: "",
-        title: '',
-        logo: '',
+        name: 'Yueer',
+        avatar: "https://cdn.yueermoe.cn/blog/logo.webp",
+        title: 'Yue\'s Blog',
+        logo: 'https://cdn.yueermoe.cn/blog/logo.webp',
         sign: '永远相信美好的事情即将发生',
-        mail: ''
+        mail: 'i@yueer.me'
     },
     footer: {
         social: [
             {
                 icon: 'mdi-github',
                 href: 'https://github.com/YueerMoe'
+            },
+            {
+                icon: 'mdi-twitter',
+                href: 'https://twitter.com/Yueerloli'
             }
         ],
         copy: {
-            name: 'OneCat',
+            name: 'Yueer',
             href: 'https://yueer.moe/'
         },
         icp: '', // ICP备案号
