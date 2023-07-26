@@ -1,0 +1,26 @@
+{
+  "name": "one-cat",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "node build.js && vite",
+    "build": "node build.js && vite build",
+    "preview": "node build.js && vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "axios": "^1.4.0",
+    "js-yaml": "^4.1.0",
+    "marked": "^5.1.2",
+    "pinia": "^2.1.4",
+    "vue": "^3.3.4",
+    "vue-axios": "^3.5.2",
+    "vue-router": "^4.2.4",
+    "vuetify": "^3.3.9"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}
