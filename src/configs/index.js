@@ -25,7 +25,7 @@ const cfg = (()=>({
             href: 'https://yueer.moe/'
         },
         icp: '', // ICP备案号
-        moe_icp: '2021010101', // Moe备案号
+        moe_icp: '2020233233', // Moe备案号
         gov: {
             province: '', // 省份代号
             code: '' // 备案号
