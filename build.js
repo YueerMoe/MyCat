@@ -73,7 +73,7 @@ fs.readdir(directoryPath, (err, files) => {
                 }
             })
             if(!('excerpt' in d)){
-                d['excerpt'] = content.slice(30)
+                d['excerpt'] = md.replace(/(<([^>]+)>)/ig, '').slice(0, 50) + '...'
             }
             if('date' in d){
                 const date = d['date']
