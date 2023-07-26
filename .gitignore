@@ -23,8 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
-!articles/test.md
+
 articles/*
+!articles/test.md
 public/articles/post/*
 public/articles/index.json
 src/configs/index.js
