@@ -6,6 +6,8 @@ import {ref} from "vue";
 const lazy = ref(cfg().lazy)
 const info = ref(cfg().info)
 const links = ref(link)
+
+links.value = links.value.sort(() => Math.random() - 0.5)
 </script>
 
 <template>
