@@ -53,6 +53,7 @@ onMounted(async () => {
             class="align-end text-white art-bg"
             :lazy-src="lazy"
             :src="article.preview"
+            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             cover
         >
           <v-card-title style="font-size: 30px">
@@ -93,5 +94,28 @@ p{
 }
 .article{
   font-size: 17px;
+  margin: 10px;
+}
+.article{
+  padding: 1%;
+}
+.article /deep/ p{
+  text-indent: 2em;
+}
+.article /deep/ a{
+  text-decoration: none;
+  color: #4fc3f7;
+}
+.article /deep/ img{
+  width: 100%;
+}
+.article /deep/ li{
+  margin-top: 20px;
+}
+.article /deep/ ul{
+  padding-left: 20px;
+}
+.article /deep/ ul p{
+  text-indent: 0
 }
 </style>

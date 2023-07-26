@@ -60,8 +60,9 @@ fs.readdir(directoryPath, (err, files) => {
         // 您可以按需访问和处理对象中的数据
         let content =  fs.readFileSync('./articles/' + file, 'utf8')
         const re = /---(.*?)---/gs
-        const d = parseCat(re.exec(content)[1])
-        content = content.replace(re, '')
+        const t = re.exec(content)
+        const d = parseCat(t[1])
+        content = content.replace(t[0],'')
         if(d !== false){
             const filePath = path.join(directoryPath, file);
             const fid = generateRandomString(8)
@@ -88,9 +89,7 @@ fs.readdir(directoryPath, (err, files) => {
                 const date = new Date()
                 d['updated'] = date.getTime()
             }
-            console.log(fid)
             d['id'] = fid
-            console.log(d)
             return d
         }
     });
